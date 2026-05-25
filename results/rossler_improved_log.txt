@@ -1,0 +1,34 @@
+Improved Neural ODE Rossler Experiment Log
+Date: 2026-04-16 08:21:26
+Device: cpu
+
+Rossler parameters:
+a = 0.2
+b = 0.2
+c = 5.7
+
+Training parameters:
+batch_size = 64
+batch_time = 30
+data_size = 2500
+niters = 2500
+test_freq = 100
+lr = 0.0005
+weight_decay = 1e-05
+grad_clip = 1.0
+terminal_weight = 0.3
+solver = dopri5
+
+Model:
+hidden_dims = (128, 128, 128, 64)
+activation = silu
+
+Best checkpoint:
+iter = 2500
+val_mae = 0.217891
+
+Validation metrics:
+{'mae': 0.21789099276065826, 'mse': 0.1309870183467865, 'rmse': 0.3619212875015595, 'max_ae': 3.111600875854492, 'x_mae': 0.281849205493927, 'y_mae': 0.3001613914966583, 'z_mae': 0.07166241109371185, 'x_rmse': 0.3811247944831848, 'y_rmse': 0.40479347109794617, 'z_rmse': 0.2895638346672058, 'x_r2': 0.9912456274032593, 'y_r2': 0.9892368316650391, 'z_r2': 0.9836248159408569}
+
+Test metrics:
+{'mae': 0.0843888446688652, 'mse': 0.038082804530858994, 'rmse': 0.1951481604598388, 'max_ae': 2.090301513671875, 'x_mae': 0.08784016966819763, 'y_mae': 0.0967574194073677, 'z_mae': 0.06856893002986908, 'x_rmse': 0.14606107771396637, 'y_rmse': 0.13408814370632172, 'z_rmse': 0.2737424969673157, 'x_r2': 0.9987576603889465, 'y_r2': 0.9988603591918945, 'z_r2': 0.9889055490493774}
